@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee World</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<div class="contaier header__inner">
+    <header>
+
+        <a href="#" class="logo">
+            <img src="{{url_for('static', filename='images/coky.png')}}" alt="" class="logo__img"/>
+        </a>
+        <h1 class="logo__text">Welcome to Coffee World</h1>
+
+    </header>
+</div>
+<nav>
+    <ul>
+        <li><a class="scroll" href="{{url_for('index')}}">About Us</a></li>
+        <li><a class="scroll" href="{{url_for('index_menu')}}">Menu</a></li>
+        <li><a class="scroll" href="{{url_for('index_try')}}">Log in</a></li>
+    </ul>
+    <a href="{{url_for('index_map')}}" class="button_card"><span><p>Find a store</p></span> <img
+            src="{{url_for('static', filename='images/map4.png')}}" alt=""
+            class="tag__img"/></a>
+</nav>
+
+
+<main>
+    {% block body %}{% endblock %}
+</main>
+
+<footer>
+    <nav class="nav_end">
+    </nav>
+    <div class="logo">
+        <a href="index.html"><h1 class="logo_text">Coffee World</h1></a>
+    </div>
+    <div class="social">
+        <a href="https://web.telegram.org/k/#@elizavetaaprosina"><img
+                src="{{url_for('static', filename='images/ut.png')}}" alt="youtube"></a>
+        <a href=""><img src="{{url_for('static', filename='images/inst.png')}}" alt="instagram"></a>
+        <a href="https://web.whatsapp.com/"><img src="{{url_for('static', filename='images/whatsapp.png')}}"
+                                                 alt="whatsapp"></a>
+    </div>
+    <p>Web Developer: Aprosina Liza 2024</p>
+</footer>
+<script type="text/javascript" src="{{url_for('static', filename='script/script.js')}}"></script>
+</body>
+</html>

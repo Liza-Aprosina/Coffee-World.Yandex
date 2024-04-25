@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<article class="banner">
+    <div class="bannerText">
+        <h1>Take cakes and coffee away</h1>
+        <div class="textP">
+            <p>Order it frow us right now</p>
+        </div>
+
+    </div>
+    <div class="bannerImg">
+        <!-- <img src="images/pngwing.com.png" class="bookimg"> -->
+    </div>
+</article>
+
+<article class="information">
+    <div class="informationText">
+        <h1 class="info_h1">How to use it</h1>
+        <div class="informationP">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="info_punkts">
+        <article class="card-info">
+            <img src="{{url_for('static', filename='images/first.png')}}" alt="cappuccino" class="info__img">
+            <h2 class="card__name">Order and pay how you’d like</h2>
+            <p class="card__price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed natus, officiis
+                maiores soluta enim. Quisquam, cupiditate totam. Aliquid earum repellat illo excepturi reiciendis
+                tenetur nihil commodi soluta cupiditate sit.<span class="card__currency"></span>
+            </p>
+        </article>
+
+        <article class="card-info">
+            <img src="{{url_for('static', filename='images/second.png')}}" alt="cappuccino" class="info__img">
+            <h2 class="card__name">Create an account</h2>
+            <p class="card__price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquid voluptates
+                id dignissimos autem. Sint voluptates asperiores sapiente in, quibusdam enim modi, numquam, quas iste
+                architecto iure minima corporis ullam?<span class="card__currency"></span>
+            </p>
+        </article>
+
+        <article class="card-info">
+            <img src="{{url_for('static', filename='images/third.png')}}" alt="cappuccino" class="info__img">
+            <h2 class="card__name">Leave a feedback</h2>
+            <p class="card__price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis nemo
+                exercitationem a nobis accusamus doloremque, possimus minus numquam ab adipisci ea eius facilis vel
+                consequatur distinctio sapiente dignissimos cumque.<span class="card__currency"></span>
+            </p>
+        </article>
+    </div>
+
+</article>
+
+{% endblock %}

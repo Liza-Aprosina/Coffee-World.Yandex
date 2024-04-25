@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="wrapper">
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/c_cake.jpg')}}" alt="carrot cake" class="card__img">
+        <h2 class="card__name">Carrot cake</h2>
+        <a href="{{url_for('index_cc')}}">Open</a>
+<!--        <p class="card__price">2 <span class="card__currency">$</span>-->
+<!--        </p>-->
+<!--        <button class="card__btn">Buy</button>-->
+    </article>
+
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/pancho.jpg')}}" alt="pancho cake" class="card__img">
+        <h2 class="card__name">pancho cake</h2>
+        <a href="{{url_for('index_pancho')}}">Open</a>
+    </article>
+
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/b_milk.jpg')}}" alt="souffle cake" class="card__img">
+        <h2 class="card__name">souffle cake</h2>
+        <a href="{{url_for('index_souffle')}}">Open</a>
+    </article>
+
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/ecler.jpg')}}" alt="ecler" class="card__img">
+        <h2 class="card__name">eclair</h2>
+        <a href="{{url_for('index_eclair')}}">Open</a>
+    </article>
+
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/pumpkin_pie.jpg')}}" alt="pumpkin pie" class="card__img">
+        <h2 class="card__name">pumpkin pie</h2>
+        <a href="{{url_for('index_pp')}}">Open</a>
+    </article>
+
+    <article class="card-menu">
+        <img src="{{url_for('static', filename='images/m_roll.jpg')}}" alt="meringue roll" class="card__img">
+        <h2 class="card__name">meringue roll</h2>
+        <a href="{{url_for('index_mr')}}">Open</a>
+    </article>
+
+</div>
+{% endblock %}
